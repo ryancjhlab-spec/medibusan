@@ -1,0 +1,55 @@
+:root {
+  color: #1a1a1a;
+  background: #ffffff;
+  font-family: "Outfit", "Pretendard", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; }
+
+.brand-guide { width: min(100%, 1440px); margin: 0 auto; }
+
+.section-header { margin-bottom: 32px; }
+
+.section-heading { display: flex; align-items: center; gap: 12px; min-height: 36px; }
+
+.section-number { color: #f472b6; font-size: 20px; font-weight: 600; }
+
+h1 { margin: 0; font-family: "Inter", "Pretendard", sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+
+.section-english { color: #4a4a4a; font-size: 16px; text-transform: uppercase; }
+
+.header-line, .panel-line { width: 100%; display: block; height: 1px; }
+
+.size-panel { display: flex; flex-direction: column; gap: 40px; height: 450px; padding: 40px; border-radius: 12px; background: #f8fafc; justify-content: center; }
+
+.size-row { display: flex; align-items: center; justify-content: center; gap: 32px; min-height: 120px; }
+
+.size-description { width: 120px; display: flex; flex-direction: column; align-items: center; gap: 8px; white-space: nowrap; }
+
+.size-description strong { font-size: 14px; font-weight: 700; }
+.size-description span { color: #4a4a4a; font-size: 13px; }
+
+.vertical-line { width: 1px; height: 120px; background: #d8dee8; }
+
+.logo-scale { display: flex; align-items: center; gap: 16px; color: #4a4a4a; font-size: 12px; white-space: nowrap; }
+
+.logo-scale img { object-fit: contain; object-position: center; display: block; }
+.logo-digital { width: 24px; height: 24px; }
+.logo-print { width: 38px; height: 38px; }
+
+.guide-note { margin: 32px 0 0; color: #4a4a4a; font-family: "Inter", "Pretendard", sans-serif; font-size: 15px; line-height: 1.5; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+@media (max-width: 640px) {
+  .brand-guide { padding: 0 20px; }
+  .section-heading { gap: 8px; flex-wrap: wrap; }
+  h1 { font-size: 21px; }
+  .section-english { font-size: 13px; }
+  .size-panel { height: auto; padding: 28px 20px; gap: 28px; }
+  .size-row { gap: 16px; justify-content: space-between; }
+  .vertical-line { height: 96px; }
+  .logo-scale { flex-direction: column; gap: 8px; align-items: flex-start; }
+}
