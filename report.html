@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관광자원 조사 및 서울 비교 평가표 - MediTour</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <span>Busan MediTour Archive</span>
+        <span class="logo-badge">부산 특화 4대 축</span>
+      </a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">홈</a></li>
+          <li><a href="report.html" class="nav-link active">자원 조사 리서치</a></li>
+          <li><a href="contents.html" class="nav-link">콘텐츠 아카이브</a></li>
+          <li><a href="sns.html" class="nav-link">성과·비교 대시보드</a></li>
+          <li><a href="final.html" class="nav-link">최종 프로젝트</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 40px;">
+    <div class="section-title-wrap">
+      <div class="section-subtitle">Master Evaluation Table</div>
+      <h1 class="section-title">부산 의료관광 4대 핵심 축 및 서울 비교 평가</h1>
+      <p style="color: var(--text-secondary); margin-top: 8px;">
+        부산의 4대 특화 모델과 서울 도심형 모델을 5대 평가 지표(25점 만점 척도) 기준으로 비교·분석한 마스터 데이터입니다.
+      </p>
+    </div>
+
+    <!-- 검색 및 필터 바 -->
+    <div class="filter-bar">
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <select id="reportCategoryFilter" class="filter-select">
+          <option value="all">전체 모델 및 비교군 보기</option>
+          <option value="busan-all">부산 4대 특화 모델만 보기</option>
+          <option value="beauty">부산 특화 1: K-Beauty & City</option>
+          <option value="recover">부산 특화 2: Recover & Ocean (중증·기장중입자)</option>
+          <option value="wellness">부산 특화 3: Wellness & Spa</option>
+          <option value="seafarer">부산 특화 4: Port & Seafarer</option>
+          <option value="seoul">비교군: 서울 도심형 메디컬</option>
+        </select>
+      </div>
+      <div>
+        <input type="text" id="reportSearch" class="search-input" placeholder="타깃 국가, 진료분야, 연계동선 검색...">
+      </div>
+    </div>
+
+    <!-- 데이터 테이블 -->
+    <div class="table-responsive">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>구분 / 모델명</th>
+            <th>주요 타깃 & 핵심 분야</th>
+            <th>특화 진료 및 회복·관광 연계 동선</th>
+            <th>핵심 차별점 (USP)</th>
+            <th>권장 체류기간</th>
+            <th>5대 지표 세부 평가 (각 5점)</th>
+            <th>총점 / 등급</th>
+            <th>추천 콘텐츠 & 크롤링 키워드</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 부산 특화 1 -->
+          <tr data-category="beauty">
+            <td>
+              <span class="badge badge-primary">부산 특화 1</span><br>
+              <strong>K-Beauty & City</strong>
+            </td>
+            <td>
+              <strong>대만·일본·중화권·동남아 2040 여성</strong><br>
+              <span style="color: var(--text-secondary); font-size: 0.85rem;">피부 · 쁘띠성형 · 치과 · 안과</span>
+            </td>
+            <td>
+              <strong>서면 메디컬스트리트(시술)</strong><br>
+              &rarr; 전포 카페거리(미식/쇼핑)<br>
+              &rarr; 광안리 오션뷰(해변 야경)
+            </td>
+            <td style="font-size: 0.85rem;">K-Beauty 집중 시술과 트렌디 도심 핫플을 결합한 당일~단기 뷰티 힐링 트립 (크루즈 기항 퀵케어 연계)</td>
+            <td>1박 2일 ~<br>3박 4일</td>
+            <td style="font-size: 0.8rem; line-height: 1.5;">
+              접근성: 4 / 전문성: 4<br>
+              외국인편의: 5 / 해양웰니스: 5<br>
+              콘텐츠확장: 5
+            </td>
+            <td>
+              <span class="score-badge tier-1">23점</span><br>
+              <small style="color: #15803d; font-weight: 600;">Tier 1 (최우수)</small>
+            </td>
+            <td>
+              <small><strong>숏폼(릴스·쇼츠) 전후 비교 & 브이로그</strong></small><br>
+              <span class="tag-keyword">#Busan plastic surgery</span>
+              <span class="tag-keyword">#서면 메디컬</span>
+            </td>
+          </tr>
+
+          <!-- 부산 특화 2 -->
+          <tr data-category="recover">
+            <td>
+              <span class="badge badge-secondary">부산 특화 2</span><br>
+              <strong>Recover & Ocean</strong><br>
+              <small style="color: var(--text-secondary);">(중증수술 & 기장 중입자)</small>
+            </td>
+            <td>
+              <strong>러시아·CIS·몽골·중동 암/장기요양 환자</strong><br>
+              <span style="color: var(--text-secondary); font-size: 0.85rem;">기장 중입자치료 · 암 로봇수술 · 장기재활</span>
+            </td>
+            <td>
+              <strong>서구 대학병원 & 기장 중입자치료센터</strong><br>
+              &rarr; 송도 케이블카 / 암남공원 치유숲<br>
+              &rarr; 기장 오시리아 웰니스 산책
+            </td>
+            <td style="font-size: 0.85rem;">동남권 상급의료와 '꿈의 암 치료' 기장 중입자치료 인프라 + 청정 해양·산림 자연을 결합한 하이엔드 중증 회복 요양</td>
+            <td>2주 ~<br>1개월 이상</td>
+            <td style="font-size: 0.8rem; line-height: 1.5;">
+              접근성: 4 / 전문성: 5<br>
+              외국인편의: 5 / 해양웰니스: 5<br>
+              콘텐츠확장: 5
+            </td>
+            <td>
+              <span class="score-badge tier-1">24점</span><br>
+              <small style="color: #15803d; font-weight: 600;">Tier 1 (최우수)</small>
+            </td>
+            <td>
+              <small><strong>유튜브 롱폼 다큐 & 환자 회복 인터뷰</strong></small><br>
+              <span class="tag-keyword">#기장 중입자치료</span>
+              <span class="tag-keyword">#Busan cancer center</span>
+            </td>
+          </tr>
+
+          <!-- 부산 특화 3 -->
+          <tr data-category="wellness">
+            <td>
+              <span class="badge badge-accent">부산 특화 3</span><br>
+              <strong>Wellness & Spa</strong>
+            </td>
+            <td>
+              <strong>중장년층 · 가족 단위 · 시니어 웰니스족</strong><br>
+              <span style="color: var(--text-secondary); font-size: 0.85rem;">종합검진 · 내과 · 한방 · 항노화</span>
+            </td>
+            <td>
+              <strong>해운대 VIP 검진센터(검진)</strong><br>
+              &rarr; 센텀 스파랜드 / 광안리 해수온천<br>
+              &rarr; 동래 온천 한방 테라피 / 동백섬
+            </td>
+            <td style="font-size: 0.85rem;">첨단 정밀 종합검진과 센텀 메디스파·광안 해수온천·동래 천연온천 한방을 잇는 프리미엄 오션 웰니스</td>
+            <td>3박 4일 ~<br>5박 6일</td>
+            <td style="font-size: 0.8rem; line-height: 1.5;">
+              접근성: 4 / 전문성: 5<br>
+              외국인편의: 5 / 해양웰니스: 5<br>
+              콘텐츠확장: 5
+            </td>
+            <td>
+              <span class="score-badge tier-1">24점</span><br>
+              <small style="color: #15803d; font-weight: 600;">Tier 1 (최우수)</small>
+            </td>
+            <td>
+              <small><strong>오션 웰니스 브이로그 & 부모님 검진 투어</strong></small><br>
+              <span class="tag-keyword">#Busan medical checkup</span>
+              <span class="tag-keyword">#Centum Spaland</span>
+            </td>
+          </tr>
+
+          <!-- 부산 특화 4 -->
+          <tr data-category="seafarer">
+            <td>
+              <span class="badge" style="background:#e0e7ff; color:#4338ca;">부산 특화 4</span><br>
+              <strong>Port & Seafarer</strong>
+            </td>
+            <td>
+              <strong>동남아(베트남·필리핀) 및 러시아 선원</strong><br>
+              <span style="color: var(--text-secondary); font-size: 0.85rem;">치과 · 외상 · 통증 · 내과 · 만성질환</span>
+            </td>
+            <td>
+              <strong>부산항 북항/신항/감천(하선)</strong><br>
+              &rarr; 항만 인근 협력병원 Fast Track<br>
+              &rarr; 초량/남포 로컬 상권
+            </td>
+            <td style="font-size: 0.85rem;">선박 정박 시간(Port Stay) 내 신속 필수의료 처치 완료 및 차기 입항/가족 동반 정밀치료 예약 연계</td>
+            <td>반일 ~<br>3일</td>
+            <td style="font-size: 0.8rem; line-height: 1.5;">
+              접근성: 5 / 전문성: 4<br>
+              외국인편의: 4 / 해양웰니스: 3<br>
+              콘텐츠확장: 4
+            </td>
+            <td>
+              <span class="score-badge tier-2">20점</span><br>
+              <small style="color: #a16207; font-weight: 600;">Tier 2 (우수)</small>
+            </td>
+            <td>
+              <small><strong>선사/에이전시 배포용 카드뉴스 & 숏폼</strong></small><br>
+              <span class="tag-keyword">#Seafarer medical</span>
+              <span class="tag-keyword">#선원 패스트트랙</span>
+            </td>
+          </tr>
+
+          <!-- 서울 비교 -->
+          <tr data-category="seoul" style="background-color: #fafafa;">
+            <td>
+              <span class="badge" style="background:#f1f5f9; color:#475569;">비교군 (Benchmark)</span><br>
+              <strong>서울 도심형 메디컬</strong>
+            </td>
+            <td>
+              <strong>글로벌 전역 (미주·중동·아시아)</strong><br>
+              <span style="color: var(--text-secondary); font-size: 0.85rem;">중증질환 · 미용성형 · 피부 · 종합검진</span>
+            </td>
+            <td>
+              <strong>수도권 빅5 병원 / 강남 대형 클리닉</strong><br>
+              &rarr; 명동/강남 쇼핑 및 특급호텔<br>
+              &rarr; 인천공항 출국
+            </td>
+            <td style="font-size: 0.85rem;">글로벌 최고 수준의 브랜드 인지도와 압도적인 의료기술 + K-컬처 글로벌 파급력 중심 (도심 집중형)</td>
+            <td>당일 ~<br>수개월</td>
+            <td style="font-size: 0.8rem; line-height: 1.5;">
+              접근성: 5 / 전문성: 5<br>
+              외국인편의: 5 / <strong style="color:#e11d48;">해양웰니스: 2</strong><br>
+              콘텐츠확장: 5
+            </td>
+            <td>
+              <span class="score-badge tier-1">22점</span><br>
+              <small style="color: #15803d; font-weight: 600;">Tier 1 (최우수)</small>
+            </td>
+            <td>
+              <small><strong>인플루언서 협업 & 첨단 시술 롱폼</strong></small><br>
+              <span class="tag-keyword">#Seoul medical tourism</span>
+              <span class="tag-keyword">#Gangnam plastic</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 비교 요약 가이드 박스 -->
+    <div style="margin-top: 30px; padding: 20px; background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+      <h3 style="font-size: 1.05rem; color: var(--primary-color); margin-bottom: 8px;">💡 평가표 비교 분석 시사점</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+        서울은 <strong>접근성·전문성(5점)</strong>과 <strong>브랜드 인지도</strong>에서 최상위 경쟁력을 보유하고 있으나, 도심 빌딩 중심 구조로 인해 <strong>'치료 후 자연 치유 및 해양 웰니스(2점)'</strong> 영역에서 명확한 한계를 가집니다. 반면 부산은 상급 의료 인프라와 함께 <strong>해양 웰니스(5점)</strong>, <strong>기장 중입자치료</strong>, <strong>항만 선원 특화(5점)</strong>라는 독보적인 차별적 경쟁우위(USP)를 확보하고 있습니다.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      &copy; 2026 Busan Medical Tourism Project Team. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

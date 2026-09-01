@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4대 축 콘텐츠 아카이브 - MediTour</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <span>Busan MediTour Archive</span>
+        <span class="logo-badge">부산 특화 4대 축</span>
+      </a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">홈</a></li>
+          <li><a href="report.html" class="nav-link">자원 조사 리서치</a></li>
+          <li><a href="contents.html" class="nav-link active">콘텐츠 아카이브</a></li>
+          <li><a href="sns.html" class="nav-link">성과·비교 대시보드</a></li>
+          <li><a href="final.html" class="nav-link">최종 프로젝트</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 40px;">
+    <div class="section-title-wrap">
+      <div class="section-subtitle">Creative Assets</div>
+      <h1 class="section-title">부산 4대 특화 모델별 제작 콘텐츠 아카이브</h1>
+      <p style="color: var(--text-secondary); margin-top: 8px;">
+        자원 조사 평가 결과를 기반으로 기획·제작된 다국어 카드뉴스, 다큐멘터리 영상, 브이로그 및 숏폼 모음입니다.
+      </p>
+    </div>
+
+    <!-- 탭 카테고리 -->
+    <div class="tab-controls">
+      <button class="tab-btn active" data-filter="all">전체보기</button>
+      <button class="tab-btn" data-filter="beauty">1. K-Beauty & City</button>
+      <button class="tab-btn" data-filter="recover">2. Recover & Ocean (중입자)</button>
+      <button class="tab-btn" data-filter="wellness">3. Wellness & Spa</button>
+      <button class="tab-btn" data-filter="seafarer">4. Port & Seafarer</button>
+    </div>
+
+    <!-- 그리드 아카이브 -->
+    <div class="contents-grid">
+      <!-- Item 1: Beauty -->
+      <article class="content-card" data-category="beauty">
+        <div class="thumbnail-box">
+          <img src="images/contents/beauty1.jpg" alt="서면 메디컬 스트리트 카드뉴스" onerror="this.src='https://placehold.co/400x300/0d9488/ffffff?text=K-Beauty+CardNews'">
+        </div>
+        <div class="content-body">
+          <span class="badge badge-primary" style="width: fit-content;">K-Beauty & City</span>
+          <h3 class="content-title">외국인을 위한 서면 뷰티 투어 & 전포 카페거리 코스</h3>
+          <p class="content-desc">서면 메디컬스트리트 당일 시술과 전포 미식·광안리 야경 힐링 동선을 소개하는 8컷 카드뉴스.</p>
+          <div class="content-meta">
+            <span>일본어/영어 인스타그램</span>
+            <span style="color: var(--primary-color); font-weight: 600;">상세보기</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 2: Recover -->
+      <article class="content-card" data-category="recover">
+        <div class="thumbnail-box">
+          <img src="images/contents/recover1.jpg" alt="기장 중입자치료 다큐멘터리" onerror="this.src='https://placehold.co/400x300/0284c7/ffffff?text=Heavy+Ion+Docu'">
+        </div>
+        <div class="content-body">
+          <span class="badge badge-secondary" style="width: fit-content;">Recover & Ocean</span>
+          <h3 class="content-title">‘꿈의 암 치료’ 기장 중입자치료 & 송도 치유숲 롱폼 다큐</h3>
+          <p class="content-desc">동남권 상급의료 암 치료 인프라와 암남공원 치유의 숲, 기장 해양 요양 코스를 조명한 기획 영상.</p>
+          <div class="content-meta">
+            <span>러시아어/몽골어 유튜브 롱폼</span>
+            <span style="color: var(--primary-color); font-weight: 600;">영상보기</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 3: Wellness -->
+      <article class="content-card" data-category="wellness">
+        <div class="thumbnail-box">
+          <img src="images/contents/wellness1.jpg" alt="센텀 스파랜드 & 종합검진 브이로그" onerror="this.src='https://placehold.co/400x300/f59e0b/ffffff?text=Ocean+Wellness+Vlog'">
+        </div>
+        <div class="content-body">
+          <span class="badge badge-accent" style="width: fit-content;">Wellness & Spa</span>
+          <h3 class="content-title">부모님 동반 프리미엄 종합검진 & 동래온천 한방 투어</h3>
+          <p class="content-desc">해운대 VIP 정밀 검진 후 센텀 메디스파와 동래 천연온천 한방 테라피로 이어지는 4박 5일 웰니스 브이로그.</p>
+          <div class="content-meta">
+            <span>중화권/영문 브이로그</span>
+            <span style="color: var(--primary-color); font-weight: 600;">상세보기</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 4: Seafarer -->
+      <article class="content-card" data-category="seafarer">
+        <div class="thumbnail-box">
+          <img src="images/contents/seafarer1.jpg" alt="선원 Fast Track 가이드" onerror="this.src='https://placehold.co/400x300/4338ca/ffffff?text=Seafarer+FastTrack'">
+        </div>
+        <div class="content-body">
+          <span class="badge" style="background:#e0e7ff; color:#4338ca; width: fit-content;">Port & Seafarer</span>
+          <h3 class="content-title">부산항 입항 선원을 위한 24h 메디컬 패스트트랙 가이드</h3>
+          <p class="content-desc">선박 정박(Port Stay) 시간 내 치과, 외상, 응급 통증 처치를 원스톱으로 지원하는 에이전시 배포용 리플릿.</p>
+          <div class="content-meta">
+            <span>베트남어/영어/러시아어</span>
+            <span style="color: var(--primary-color); font-weight: 600;">다운로드</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      &copy; 2026 Busan Medical Tourism Project Team. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

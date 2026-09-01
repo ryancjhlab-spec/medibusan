@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성과 & 서울 비교 분석 대시보드 - MediTour</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <span>Busan MediTour Archive</span>
+        <span class="logo-badge">부산 특화 4대 축</span>
+      </a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">홈</a></li>
+          <li><a href="report.html" class="nav-link">자원 조사 리서치</a></li>
+          <li><a href="contents.html" class="nav-link">콘텐츠 아카이브</a></li>
+          <li><a href="sns.html" class="nav-link active">성과·비교 대시보드</a></li>
+          <li><a href="final.html" class="nav-link">최종 프로젝트</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 40px;">
+    <div class="section-title-wrap">
+      <div class="section-subtitle">Performance & Comparative Analysis</div>
+      <h1 class="section-title">콘텐츠 성과 및 서울 대비 비교 분석 대시보드</h1>
+      <p style="color: var(--text-secondary); margin-top: 8px;">
+        SNS 마케팅 캠페인 성과 지표와 함께 5대 평가 지표 기준 부산 4대 축과 서울의 경쟁력 비교 분석 결과입니다.
+      </p>
+    </div>
+
+    <!-- 핵심 KPI -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">총 노출수 (Total Impressions)</div>
+        <div class="kpi-value">128,450</div>
+        <div class="kpi-trend trend-up">▲ 24.5% 전월 대비 상승</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">평균 참여율 (Engagement Rate)</div>
+        <div class="kpi-value">6.82%</div>
+        <div class="kpi-trend trend-up">▲ 1.2%p 업계 평균 초과</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">부산 4대축 평균 평가점수</div>
+        <div class="kpi-value">22.8<span style="font-size:1.1rem; color:var(--text-secondary);">/25</span></div>
+        <div class="kpi-trend trend-up">Tier 1 글로벌 최우수 등급</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">서울 대비 해양웰니스 격차</div>
+        <div class="kpi-value">+3.0<span style="font-size:1.1rem; color:var(--text-secondary);">점</span></div>
+        <div class="kpi-trend" style="color: var(--primary-color);">부산 5.0점 vs 서울 2.0점</div>
+      </div>
+    </section>
+
+    <!-- 비교 분석 전용 섹션: 부산 4대 축 vs 서울 5대 평가 지표 -->
+    <section class="dashboard-card" style="margin-bottom: 36px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 16px;">
+        <div>
+          <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">📊 5대 지표별 부산 4대 축 vs 서울 도심형 메디컬 비교</h2>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">25점 만점 척도 기준 객관적 정량·정성 평가 비교 분석표</p>
+        </div>
+        <span class="badge badge-primary">정량 비교 평가</span>
+      </div>
+
+      <div class="table-responsive">
+        <table class="comparison-table">
+          <thead>
+            <tr style="background-color: #f8fafc;">
+              <th>평가 지표 (각 5점 만점)</th>
+              <th>부산 1. K-Beauty</th>
+              <th>부산 2. Recover (중입자)</th>
+              <th>부산 3. Wellness</th>
+              <th>부산 4. Seafarer</th>
+              <th style="background-color: #f1f5f9;">비교군: 서울 도심형</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. 접근성 (Airport & Port)</strong></td>
+              <td>4점</td>
+              <td>4점</td>
+              <td>4점</td>
+              <td class="highlight-busan">5점 (부두직결)</td>
+              <td style="background-color: #fafafa;">5점 (인천공항)</td>
+            </tr>
+            <tr>
+              <td><strong>2. 전문성·신뢰도 (Medical Quality)</strong></td>
+              <td>4점</td>
+              <td class="highlight-busan">5점 (중입자·로봇)</td>
+              <td class="highlight-busan">5점 (정밀검진)</td>
+              <td>4점</td>
+              <td style="background-color: #fafafa;">5점 (빅5 상급병원)</td>
+            </tr>
+            <tr>
+              <td><strong>3. 외국인 편의성 (Coordination)</strong></td>
+              <td>5점</td>
+              <td>5점</td>
+              <td>5점</td>
+              <td>4점</td>
+              <td style="background-color: #fafafa;">5점</td>
+            </tr>
+            <tr>
+              <td><strong>4. 웰니스·해양 연계 (Ocean & Spa)</strong></td>
+              <td class="highlight-busan">5점 (광안 오션뷰)</td>
+              <td class="highlight-busan">5점 (기장·송도 힐링)</td>
+              <td class="highlight-busan">5점 (온천·메디스파)</td>
+              <td>3점</td>
+              <td style="background-color: #fee2e2; color:#be123c; font-weight:700;">2점 (자원 한계)</td>
+            </tr>
+            <tr>
+              <td><strong>5. 콘텐츠 확장성 (Viral & K-Story)</strong></td>
+              <td>5점</td>
+              <td>5점</td>
+              <td>5점</td>
+              <td>4점</td>
+              <td style="background-color: #fafafa;">5점</td>
+            </tr>
+            <tr style="border-top: 2px solid var(--border-color); font-weight: 700;">
+              <td>총점 (25점 만점)</td>
+              <td style="color: #15803d;">23점 (Tier 1)</td>
+              <td style="color: #15803d;">24점 (Tier 1)</td>
+              <td style="color: #15803d;">24점 (Tier 1)</td>
+              <td style="color: #a16207;">20점 (Tier 2)</td>
+              <td style="background-color: #f1f5f9; color: #334155;">22점 (Tier 1)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 채널별 성과 & 유튜브 크롤링 키워드 분석 -->
+    <section class="dashboard-row">
+      <div class="dashboard-card">
+        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">채널별 도달 비중</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 20px;">시각적 뷰티 및 해양 웰니스 중심의 인스타그램·유튜브 성과</p>
+        
+        <div class="bar-metric-group">
+          <div class="bar-item">
+            <div class="bar-info">
+              <span>Instagram (K-Beauty & 브이로그)</span>
+              <strong>58% (74.5k)</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 58%;"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-info">
+              <span>YouTube (중입자 다큐 & 웰니스 롱폼)</span>
+              <strong>27% (34.6k)</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 27%; background-color: var(--secondary-color);"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-info">
+              <span>Global Forum & Seafarer Agency</span>
+              <strong>15% (19.3k)</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 15%; background-color: var(--accent-color);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-card">
+        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">유튜브 크롤링 핵심 키워드 유입 인사이트</h3>
+        <ul style="list-style-type: disc; padding-left: 20px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.8;">
+          <li><strong>#기장중입자치료 #BusanCancerCenter</strong>: 러시아/CIS 권역에서 평균 시청 지속시간(6분 40초) 최고치 달성.</li>
+          <li><strong>#서면메디컬 #BusanSkinClinic</strong>: 대만/일본 2030 여성층의 북마크 저장률이 일반 뷰티 콘텐츠 대비 2.8배 높음.</li>
+          <li><strong>#CentumSpaland #부산온천한방</strong>: 가족 단위 웰니스 여행 키워드로 검색 전환율 4.2% 견인.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      &copy; 2026 Busan Medical Tourism Project Team. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
